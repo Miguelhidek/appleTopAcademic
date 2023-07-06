@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>iPhoneTop</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="icon" type="image/png" href="./assets/media/apple-logo.png">
+	<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;500;700&family=Bebas+Neue&family=Oxanium:wght@200;500;700&family=Poiret+One&family=Source+Code+Pro:wght@300;400;600&display=swap" rel="stylesheet"> 
+</head>
+<body>
+	<header>
+		<div class="header">
+			<a href="" class="header-logo">
+				<img src="./assets/media/iphone-top-logo.jpg">
+			</a>
+			<div class="header-search">
+				<div class="search-input-container">
+					<input type="text" id="search" name="search" placeholder="Buscar aqui..." value="" autocomplete="off">
+				</div>
+				<div class="result-search-bar">
+					<p> </p>
+					<div class="result-search-content">
+					</div>
+				</div>
+			</div>
+			<div class="header-cart" >
+				<div class="icon-button" onclick="{menuToggleCart()}">
+					<img src="./assets/icons/icon-cart.png">
+					<p></p>				
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<nav>
+				<ul>
+					<li> <a onclick="loadCategory('Iphone')">Iphone</a> </li>
+					<li> <a onclick="loadCategory('Macbook')">Macbook</a> </li>
+					<li> <a onclick="loadCategory('Watch')">Apple Watch</a> </li>
+					<li> <a onclick="loadCategory('Airpod')">AirPods</a> </li>
+					<li> <a onclick="loadCategory('Acessorio')">Acessórios</a> </li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main class="main">
+		<section>
+			<div class="section-content">
+				<div class="section-title"><span>Ofertas</span>Top</div>
+				<div class="item-container">
+					<!--
+					<div data="data-teste" class="item" onclick="productViewToggle(this)">
+						<span>12%</span> 
+						<div class="item-image">
+							<img src="./assets/media/iphone-14-pro-max.png">
+						</div>
+						<div class="item-description">
+							<div class="product-name"> Iphone 14 Pro Max (128gb) - Roxo Amarelo Azul Branco Preto </div>
+							<div class="after">De: R$ 10.000,00</div>
+							<div class="now">Por: R$ 8.000,00</div>
+							<div class="or">Ou 12x de R$ 720,57</div>
+						</div>
+					</div>
+					-->
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="section-content banner-product">
+				<div class="banner-container">
+					<div class="banner-item">
+						<img src="./assets/media/banner01.png"/>
+					</div>
+					<div class="banner-item">
+						<img src="./assets/media/banner02.png"/>
+					</div>
+					<div class="banner-item">
+						<img src="./assets/media/apple-watch-banner.png"/>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="section-content">
+				<div class="section-title"><span>Produtos</span> Apple</div>
+				<div class="item-container-grid">
+					<!--
+					<div class="item">
+						<div class="item-image">
+							<img src="./assets/media/iphone-14-pro-max.png">
+						</div>
+						<div class="item-description">
+							<div class="product-name"> Iphone 14 Pro Max (128gb) - Roxo Amarelo Azul Branco Preto </div>
+							<div class="after">De: R$ 10.000,00</div>
+							<div class="now">Por: R$ 8.000,00</div>
+							<div class="or">Ou 12x de R$ 720,57</div>
+						</div>
+					</div>
+					-->
+				</div>
+			</div>
+		</section>
+	</main>
+	<div class="cart-container">
+		<div class="cart">
+			<div class="cart-backBar">
+				<div class="cart-backBar-title">
+					Cesta
+				</div>
+				<div class="cart-backBar-close-button" onclick="menuToggleCart()">
+					<img src="./assets/icons/icon-close.png">
+				</div>
+			</div>
+			<div class="cart-empty">
+				<h1> ;( </h1>
+				<h4> Sua cesta está vazia </h4>
+			</div>
+			<div class="cart-item-container">
+				<!--
+				<div class="cart-item">
+					<div class="cart-item-img">
+						<img src="./assets/media/iphone-14-pro-max.png">
+					</div>
+					<div class="cart-item-description">
+						<h4> Iphone 14 Pro Max (128gb) - Roxo   </h4>
+						<span> R$ 8.000,00  </span>
+					</div>
+					<div class="cart-item-qtdButton">
+						<div class="cart-item-qtdButton-button-container">
+							<label class="qtd-button">
+								<input type="number" min=0 name="" value="1">
+							</label>
+						</div>
+						<div class="cart-item-qtdButton-del">
+							<img src="./assets/icons/icon-trash.png">
+						</div>
+					</div>
+				</div>
+				-->
+			</div>
+			<div class="cart-resume-container">
+				<div class="cart-resume-description">
+					<div class="cart-description-item">
+						<div class="description-item-name"> Subtotal:</div>
+						<div class="description-item-value"> R$ 0,00</div>
+					</div>
+					<div class="cart-description-item">
+						<div class="description-item-name"> Descontos:</div>
+						<div class="description-item-value"> R$ 0,00</div>
+					</div>
+					<div class="cart-description-item">
+						<div class="description-item-name total"> Total:</div>
+						<div class="description-item-value total"> R$ 0,00</div>
+					</div>
+				</div>
+				<div class="cart-resume-buttons">
+					<div class="button" onclick="menuToggleCart()">
+						Continuar Comprando
+					</div>
+					<div class="button">
+						Realizar Pedido
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="product-view">
+		<div class="product-view-close-button" onclick="productViewToggle()">
+			<img src="./assets/icons/icon-close.png">
+		</div>
+		<div class="product-view-container">
+			<div class="section-image-container">
+				<div class="image-container">
+					<img class="main-image" src="./assets/media/iphone-14-pro-max.png">
+				</div>
+				<div class="section-image-gallery">
+					<div class="image-gallery-button">
+						<div class="gallery-icon-button">
+							<img src="./assets/icons/icon-left.png">
+						</div>
+					</div>
+					<div class="image-gallery-preview">
+						<div class="preview">
+							<img src="./assets/media/iphone-14-pro-max.png">
+						</div>
+						<div class="preview">
+							<img src="./assets/media/iphone-14-pro-max.png">
+						</div>
+						<div class="preview">
+							<img src="./assets/media/iphone-14-pro-max.png">
+						</div>
+					</div>
+					<div class="image-gallery-button">
+						<div class="gallery-icon-button">
+							<img src="./assets/icons/icon-right.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section-description-container">
+				<div class="section-item-description">
+					<div class="section-product-name"> Iphone 14 Pro Max (128gb) - Roxo Profundo </div>
+					<div class="section-product-ref">Ref I0214X5V</div>
+					<div class="section-after">R$ 10.000,00</div>
+					<div class="section-sale"> 12% </div>
+					<div class="section-now">R$ 8.000,00 <span> no PIX</span></div>
+					<div class="section-or">Ou <span> 10x </span> de <span>R$ 720,57</span></div>
+				</div>
+				<div>
+					<div class="section-product-view-title">
+						<h4>Cor: </h4>
+						<p>Roxo-profundo</p>
+					</div>
+					<div class="section-option-color">
+						<div class="option-color option-actived">
+							<img src="./assets/media/iphone-14-pro-max.png">
+						</div>
+						<div class="option-color">
+							<img src="./assets/media/iphone-14-pro-max.png">
+						</div>
+						<div class="option-color">
+							<img src="./assets/media/iphone-14-pro-max.png">
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="section-product-view-title">
+						<h4>Armazenamento: </h4>
+						<p> 128gb</p>
+					</div>
+					<div class="section-option-lenght">
+						<div class="option-lenght">
+							128 gb
+						</div>
+						<div class="option-lenght">
+							256 gb
+						</div>
+						<div class="option-lenght">
+							512 gb
+						</div>
+						<div class="option-lenght">
+							512 gb
+						</div>
+						<div class="option-lenght">
+							1 TB
+						</div>
+					</div>
+				</div>
+				<div class="section-item-button">
+					<div class="button" onclick="setAddCartItem(this)">
+						Comprar
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="product-cart-alert">
+			<div class="cart-alert-title">
+				<img src="./assets/icons/icon-check.png"/>
+				<h1> Produto Adicionao ao Carrinho</h1>
+			</div>
+			<div class="product-cart-alert-item">
+				<div class="product-cart-alert-item-image">
+					<img src="./assets/media/iphone-14-pro-max.png">
+				</div>
+				<div class="product-cart-alert-item-description">
+					<div class="alert-item-name"> Iphone 14 Pro Max (128gb) - Roxo Profundo </div>
+					<div class="alert-item-value">
+						<div class="alert-item-price">
+							<div class="section-or">10x de R$ 720,57</div>	
+							<span>(Total a prazo R$ 7.257,00) </span> 
+						</div>
+						<div class="alert-item-pix-price">
+							<div class="section-now">R$ 8.000,00</div>
+							<span> no PIX</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cart-alert-buttons-container">
+				<div class="button" onclick="productViewToggle()"> Continuar Comprando</div>
+				<div class="button" onclick="closeAlertAddCartItem()">Ver Carrinho</div>
+			</div>
+		</div>
+	</div>
+	<div class="navMobile">
+		<div class="navMobileButton" onclick="{showMenuToggle()}">
+			<img src="./assets/icons/icon-menu.png">
+		</div>
+		<div class="navMobileButton" onclick="{setSearchFocus()}">
+			<img src="./assets/icons/icon-search.png">
+		</div>
+		<div class="navMobileButton" onclick="{showFilterToggle()}">
+			<img src="./assets/icons/icon-filter.png">
+		</div>
+		<div class="navMobileButton" onclick="{menuToggleCart()}">
+			<img src="./assets/icons/icon-cart-gray.png">
+		</div>
+	</div>
+	<footer>
+		<div class="footer">
+			<div class="start">
+				<div class="footer-title">
+					Institucional
+				</div>
+				<ul>
+					<li><a>Sobre IphoneTop</a></li>
+					<li><a>Fale Conosco</a></li>
+					<li><a>Assistência Técnica</a></li>
+					<li><a>Trocas e Devoluções</a></li>
+					<li><a>Condições de Frete</a></li>
+					<li><a>Política de Privacidade</a></li>
+				</ul>
+			</div>
+			<div class="center">
+				<div class="contact-container">
+					<a class="contact-item">
+						<div class="contact-item-icon">
+							<img src="./assets/icons/icon-phone.png">
+						</div>
+						<div class="contact-item-label">
+							<span> 4002-8922</span>
+							<p> Seg a Sexta das 8 as 17 horas.</p>
+							<p> Sábado das 9 as 12 horas.</p>
+						</div>
+					</a>
+					<a class="contact-item">
+						<div class="contact-item-icon">
+							<img src="./assets/icons/icon-whatsapp-green.png">
+						</div>
+						<div class="contact-item-label">
+							<span> Compre pelo o whatsapp</span>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="end">
+				<div class="footer-title">
+					Redes Sociais
+				</div>
+				<div class="social-container">
+					<a>
+						<img src="./assets/icons/icon-instagram.png">
+					</a>
+					<a>
+						<img src="./assets/icons/icon-facebook.png">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-addon">
+			<div class="addon-title">
+				Formas de Pagamento
+			</div>
+			<div class="payment-container">
+				<span class="card-visa"></span>
+				<span class="card-mastercard"></span>
+				<span class="card-hipercard"></span>
+				<span class="card-elo"></span>
+				<span class="card-amx"></span>
+				<span class="card-dinner"></span>
+			</div>
+		</div>
+		<div class="footer-addon">
+			<p>Preços e condições exclusivas para o site iphonetop.com.br e televendas, podendo sofrer alterações sem aviso prévio. A iphonetop.com.br é uma empresa nacional de distribuição de bens de consumo Ltda, rua Oliveira Paiva, nº 2961, loja 06 / Fortaleza - CE / CEP 60822-131.</p>
+		</div>
+	</footer>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

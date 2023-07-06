@@ -1,0 +1,274 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Alexandria";
+	overflow-x: hidden;
+}
+
+header, footer{
+	width: 100vw;
+	height: 50px;
+	background-color: #333;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	color: #FFF;
+	padding: 10px;
+}
+
+main{
+	width: 100vw;
+	height: calc(100vh - 100px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #333;
+	padding: 10px 0;
+}
+
+section{
+	width: 100%;
+	max-width: 1350px;
+	height: 90%;
+	padding: 10px;
+	border: .5px solid #CCC;
+	border-top: 0;
+	border-bottom: 0;
+	display: flex;
+	flex-direction: row;
+}
+
+.section-image-container{
+	width: 100%;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.image-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	overflow: hidden;
+	-moz-transition: all 1.5s;
+	-webkit-transition: all 1.5s;
+	transition: all 1.5s;
+}
+
+.main-image{
+	width: 55%;
+}
+
+.section-image-gallery{
+	width: 100%;
+	height: 100px;
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.image-container{
+	display: flex;
+	overflow: hidden;
+}
+
+.main-image{
+	-moz-transition: all 1.5s;
+	-webkit-transition: all 1.5s;
+	transition: all 1.5s;
+	padding: 20px;
+}
+
+.image-gallery-button{
+	width: 5%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2px;
+}
+
+.icon-button{
+	width: 25px;
+	height: 25px;
+	transition: all .5s;
+	background-color: #CCC;
+}
+
+.border-left{
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 50%;
+}
+
+.border-right{
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+}
+
+.icon-button:hover{
+	width: 30px;
+	height: 30px;
+	background-color: #333;
+}
+
+.image-gallery-preview{
+	width: 90%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.preview{
+	width: 100px;
+	height: 100px;
+	margin: 0 2px;
+	transition: all .5s;
+	padding: 10px;
+	opacity: 50%;
+	cursor: pointer;
+	border: 2px solid #CCC;
+	border-radius: 5%;
+}
+
+.preview img{
+	width: 100%;
+}
+
+.preview:hover{
+	width: 110px;
+	height: 110px;
+	margin: 0;
+	opacity: 100%;
+}
+
+.section-description-container{
+	width: 70%;
+	display: flex;
+	padding: 20px;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+}
+
+.section-item-description{
+	width: 100%;
+	font-family: sans-serif;
+}
+
+.section-product-name{
+	flex-wrap: wrap;
+	font-weight: 600;
+	font-size: 24px;
+}
+
+.section-product-ref{
+	margin: 15px 0;
+	font-family: "Oxanium";
+}
+
+.section-after{
+	text-decoration: line-through;
+	color: #888;
+	font-weight: 600;
+	margin: 10px 0;
+}
+
+.section-sale{
+	display: inline-block;
+	padding: 5px 10px;
+	color: #FFF;
+	font-weight: 700;
+	background-color: #F00;
+}
+
+.section-now{
+	font-size: 34px;
+	font-weight: 600;
+}
+
+.section-now span{
+	font-weight: 200;
+	font-size: 14px;
+}
+
+.section-or span{
+	font-weight: 700;
+}
+
+.section-option-item{
+	width: 100%;
+	height: 110px;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	flex-direction: row;
+	padding: 2px;
+}
+
+.option-item:first-child{
+	margin-left: 0;
+}
+
+.option-item{
+	width: 100px;
+	height: 100px;
+	margin: 0 2px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5%;
+	transition: all .5s;
+	border: 2px solid #EEE;
+}
+
+.option-item img{
+	width: 80%;
+}
+
+.option-item:hover{
+	border: 2px solid #AAA;
+}
+
+.option-actived{
+	border: 2px solid #AAA;
+}
+
+.section-item-button{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button{
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	margin: 5px;
+	border-radius: 25px;
+	border: 2px solid #999;
+	padding: 12px 10px;
+	color: #FFF;
+	background-color: #999;
+	font-family: "Alexandria";
+	font-size: 14px;
+	transition: all .5s;
+	cursor: pointer;
+}
+
+.button:hover{
+	color: #999;
+	background-color: #FFF;
+}
