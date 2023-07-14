@@ -1640,6 +1640,10 @@ footer{
 		margin-right: 10px;
 	}
 
+	.product-view{
+		background-color: #FFF;
+	}
+
 	.product-view-close-button img{
 		width: 42px;
 		height: 42px;
