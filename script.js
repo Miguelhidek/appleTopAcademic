@@ -980,11 +980,11 @@ function showMenuToggle(){
 
 	if(menuItemView){
 		setTimeout(()=>nav.style.display = "none",400);
-		nav.style.height = "calc(0vh - 100px)";
+		nav.style.height = "0vh";
 		menuItemView = false;		
 	}else{
 		nav.style.display = "flex";
-		setTimeout(()=>nav.style.height = "calc(100vh - 100px)",100);
+		setTimeout(()=>nav.style.height = "100vh",100);
 		menuItemView = true;
 	}
 }

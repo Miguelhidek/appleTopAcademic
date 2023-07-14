@@ -1521,17 +1521,18 @@ footer{
 		display: none;
 		position: fixed;
 		width: 100vw;
-		height: calc(0vh - 100px);
+		height: 0vh;
 		bottom: 0;
 		background-color: rgba(255, 255, 255, 1.0);
 		padding: 5vw;
+		z-index: 99;
 		transition: all .5s;
 		overflow: hidden;
 	}
 
 	nav ul{
 		display: flex;
-		justify-content: start;
+		justify-content: center;
 		align-items: start;
 		flex-direction: column;
 		width: 100%;
@@ -1540,7 +1541,7 @@ footer{
 
 	nav ul li{
 		display: block;
-		margin: 30px 0;
+		margin: 10px 0;
 	}
 
 	nav ul li a{
@@ -1554,8 +1555,16 @@ footer{
 		border-bottom: 5px solid #FFF;
 	}
 
+	.section-title{
+		margin: 0;
+	}
+
+	.item-image{
+		padding: 15px;
+	}
+
 	.cart-empty {
-		height: 65%;
+		height: 60%;
 	}
 
 	.button{
@@ -1643,7 +1652,7 @@ footer{
 		flex-direction: column;
 		justify-content: start;
 		align-items: center;
-		overflow: unset;
+		overflow: scroll;
 	}
 
 	.product-cart-alert{
@@ -1653,6 +1662,7 @@ footer{
 		justify-content: start;
 		align-items: center;
 		overflow: unset;
+		overflow: scroll;
 	}
 
 	.section-image-container{
@@ -1687,6 +1697,7 @@ footer{
 	.section-description-container{
 		width: 100%;
 		padding-top: 0;
+		margin-bottom: 50px;
 	}
 
 	.section-item-description{
@@ -1694,7 +1705,7 @@ footer{
 	}
 
 	.section-product-name{
-		font-size: 22px;
+		font-size: 20px;
 	}
 
 	.section-product-ref{
@@ -1711,7 +1722,7 @@ footer{
 	}
 
 	.option-lenght{
-		padding: 5px 5px;
+		padding: 5px 3px;
 	}
 
 	.section-item-button{
@@ -1762,6 +1773,10 @@ footer{
 		flex-direction: column;
 		max-width: 100vw;
 		padding: 10px 20px;
+	}
+
+	.footer-addon:last-child{
+		margin-bottom: 80px;
 	}
 
 	.addon-title{
