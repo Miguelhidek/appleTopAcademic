@@ -263,11 +263,12 @@ section{
 
 .item{
 	min-width: 216px;
-	min-height: 400px;
+/*	min-height: 400px;*/
 	max-width: 216px;
-	max-height: 400px;
+/*	max-height: 400px;*/
 	display: flex;
-	justify-content: end;
+	height: auto;
+/*	justify-content: end;*/
 	align-items: end;
 	flex-direction: column;
 	padding: 10px;
@@ -309,7 +310,7 @@ section{
 .item-description{
 	display: flex;
 	width: 100%;
-	height: 30%;
+	height: 40%;
 	font-family: Helvetica, Arial ,sans-serif;
 	flex-direction: column;
 	overflow: hidden;
@@ -1560,7 +1561,8 @@ footer{
 	}
 
 	.item-image{
-		padding: 15px;
+		padding: 20px;
+		height: 50%
 	}
 
 	.cart-empty {
@@ -1631,7 +1633,7 @@ footer{
 	}
 
 	.item-description .now{
-		font-size: 18px;
+		font-size: 15px;
 	}
 
 	.product-view-close-button{
